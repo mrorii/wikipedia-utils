@@ -74,8 +74,9 @@ def main(args):
 
             for page_item, response in zip(batch_page_items, responses):
                 if response is not None:
-                    page_item["html"] = response.text
-                    print(json.dumps(page_item, ensure_ascii=False), file=fo)
+                    copied_page_item = page_item.copy()
+                    copied_page_item["html"] = response.text
+                    print(json.dumps(copied_page_item, ensure_ascii=False), file=fo)
                 else:
                     logger.warning(
                         "Request for the page %s (pageid=%s, revid=%s) failed. The request will be tried again later.",
