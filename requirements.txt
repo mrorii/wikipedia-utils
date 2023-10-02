@@ -1,10 +1,10 @@
 beautifulsoup4==4.9.3
-datasets
+datasets==2.14.5
 elasticsearch>=7.0.0,<8.0.0
 fugashi==1.1.2
-grequests
-logzero
-lxml
-requests
-tqdm
+grequests==0.7.0
+logzero==1.7.0
+lxml==4.9.3
+requests==2.31.0
+tqdm==4.66.1
 unidic_lite==1.0.8
